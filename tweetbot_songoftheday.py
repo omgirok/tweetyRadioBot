@@ -34,7 +34,7 @@ for track in trackDict:
 			trackName = track[3].text
 			print "Song of the day " + datetime.date.strftime(today, '%A, %B %d %Y') 
 			print trackName + " by " + trackArtist
-			# api.update_status(status="Today's song of the day is " + trackName + " by " + trackArtist + "! Hope you enjoy :)") 
+			api.update_status(status="Today's song of the day is " + trackName + " by " + trackArtist + "! Hope you enjoy :)") 
 			sleep(60*60*24)
 	except tweepy.TweepError as e:
 		print(e.reason)
