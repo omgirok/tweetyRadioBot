@@ -32,7 +32,7 @@ for track in trackDict:
 		else:
 			trackArtist = track[5].text
 			trackName = track[3].text
-			print "Song of the day " + date.strfmtime(today, '%A, %B %d %Y') 
+			print "Song of the day " + datetime.date.strfmtime(today, '%A, %B %d %Y') 
 			print trackName + " by " + trackArtist
 			api.update_status(status="Today's song of the day is " + trackName + " by " + trackArtist + "! Hope you enjoy :)") 
 			sleep(60*60*24)
