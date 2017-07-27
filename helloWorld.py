@@ -15,5 +15,12 @@ api = tweepy.API(auth)
 
 tweet = 'Hello, world!'
 # api.update_status(status=tweet)
+user = api.get_user('orionou')
+print user.screen_name
+print user.followers_count
 
-print api.me()
+
+print user.friends()
+
+
+
